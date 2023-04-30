@@ -1,68 +1,85 @@
-\documentclass[12pt,a4paper]{report}
+\documentclass[12pt,a4paper]{book}
+\newcommand\tab[1][1cm]{\hspace*{#1}}
 \usepackage{amsmath,amsthm,amssymb,graphicx,hyperref}
-\usepackage[left=1.2in,right=1in,top=1in,bottom=1in]{geometry}
-\usepackage[romanian]{babel}
+\usepackage[left=1.2in,right=1.2in,top=1in,bottom=1in]{geometry}
+%\usepackage[romanian]{babel}
+\usepackage[english]{babel}
+\usepackage{xcolor}
+\usepackage{paralist}
+\RequirePackage{hyphenat}
+\usepackage{algorithmic, algorithm}
+\usepackage[inline]{enumitem}
 %\usepackage{...insert other packages here...}
-\newtheorem{thm}{Teorema}[section]
-\newtheorem{lem}[thm]{Lema}
-\newtheorem{cor}[thm]{Corolarul}
-\newtheorem{prop}[thm]{Propozi\c tia}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{lem}[thm]{Lemma}
 \theoremstyle{definition}
-\newtheorem{defn}{Defini\c tia}[section]
+\newtheorem{defn}{Definition}[section]
 \theoremstyle{remark}
-\newtheorem{rem}{Remarca}[section]
-\newtheorem{exmp}{Exemplul}[section]
+\newtheorem{rem}{Remark}[section]
+\newtheorem{exmp}{Example}[section]
 \begin{document}
+\sloppy
+
 \thispagestyle{empty}
 \begin{center}
 \begin{figure}[h!]
 \vspace{-20pt}
 \begin{center}
-\includegraphics[width=100pt]{FMI-03.png}
+\includegraphics[width=100pt]{Graphics/FMI-03.png}
 \end{center}
 \end{figure}
 
 
-% Variables
 
-\newcommand{\Ltitle}{Aplicatie pentru gestionarea tranzactiilor finnaciare}
+{\large{\bf WEST UNIVERSITY OF TIMI\c SOARA
 
-{\large{\bf UNIVERSITATEA DE VEST DIN TIMI\c SOARA \
+FACULTY OF MATHEMATICS AND COMPUTER SCIENCE
 
-FACULTATEA DE MATEMATIC\u A \c SI INFORMATIC\u A 
-
-PROGRAMUL DE STUDII DE LICEN\c T\u A: 
-Informatic\u a Aplicat\u a}}
+BACHELOR STUDY PROGRAM:  Computer Science 
 
 \vspace{120pt}
-{\huge {\bf LUCRARE DE LICEN\c T\u A}}
+{\huge {\bf BACHELOR}}
 
-\vspace{150pt}
+\vspace{150pt}}
+
 \end{center}
 
-{\large\noindent{\bf COORDONATORI:\hfill ABSOLVENT:}
+{\large\noindent{\bf SUPERVISOR:\hfill GRADUATE:}
 
 \noindent Lect. Dr. Micot\u a Flavia Elena \newline Asi. Bele\u s Teodor  \hfill St\u aniloiu Grigore Liviu}
+
+\vfill
+
+
+
 
 \vfill
 \begin{center}
 {\bf TIMI\c SOARA
 
-2022}
+2023}
 \end{center}
+
+
+
 \newpage
 \thispagestyle{empty}
 \begin{center}
-{\large{\bf UNIVERSITATEA DE VEST DIN TIMI\c SOARA
+{\large{\bf WEST UNIVERSITY OF TIMI\c SOARA
 
-FACULTATEA DE MATEMATIC\u A \c SI INFORMATIC\u A
+FACULTY OF MATHEMATICS AND COMPUTER SCIENCE
 
-PROGRAMUL DE STUDII DE LICEN\c T\u A: Informatic\u a Aplicat\u a}}
+BACHELOR STUDY PROGRAM:  Computer Science 
 
 \vspace{120pt}
-{\huge {\bf Moneager:\\Aplicatie pentru gestionarea tranzactiilor finnaciare}}
+{\huge {\bf BACHELOR}}
 
-\vspace{150pt}
+
+\vspace{200pt}
+
+{\huge {\bf Moneager: A Mobile Application for Managing Financial Transactions}}
+
+\vspace{153pt}
 \end{center}
 
 {\large\noindent{\bf COORDONATORI:\hfill ABSOLVENT:}\\
@@ -70,15 +87,17 @@ PROGRAMUL DE STUDII DE LICEN\c T\u A: Informatic\u a Aplicat\u a}}
 \noindent Lect. Dr. Micot\u a Flavia Elena \newline Asi. Bele\u s Teodor  \hfill St\u aniloiu Grigore Liviu}
 
 \vfill
-\begin{center}
-{\bf TIMI\c SOARA
+ 
 
-2022}
-\end{center}
+
 \newpage
 \normalsize{}
-\section*{Abstract}
-rezumatul in limba engleza
+
+\section*{Abstract} 
+
+
+\newpage
+\normalsize{}
 
 %CUPRINS 
 
