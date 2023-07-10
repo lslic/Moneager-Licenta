@@ -9,6 +9,11 @@
 \RequirePackage{hyphenat}
 \usepackage{algorithmic, algorithm}
 \usepackage[inline]{enumitem}
+
+\input{listing}
+\bibliographystyle{unsrt}
+%Add references 
+
 %\usepackage{...insert other packages here...}
 \newtheorem{thm}{Theorem}[section]
 \newtheorem{lem}[thm]{Lemma}
@@ -47,7 +52,7 @@ BACHELOR STUDY PROGRAM:  Computer Science
 
 {\large\noindent{\bf SUPERVISOR:\hfill GRADUATE:}
 
-\noindent Lect. Dr. Micot\u a Flavia Elena \newline Asi. Bele\u s Teodor  \hfill St\u aniloiu Grigore Liviu}
+\noindent Conf. Micot\u a Flavia Elena \newline Drd. Beleș Damian-Teodor  \hfill St\u aniloiu Grigore Liviu}
 
 \vfill
 
@@ -85,7 +90,7 @@ BACHELOR STUDY PROGRAM:  Computer Science }
 \end{center}
 {\large\noindent{\bf SUPERVISOR:\hfill GRADUATE:}
 
-\noindent Lect. Dr. Micot\u a Flavia Elena \newline Asi. Bele\u s Teodor  \hfill St\u aniloiu Grigore Liviu}
+\noindent Conf. Micot\u a Flavia Elena \newline Drd. Beleș Damian-Teodor  \hfill St\u aniloiu Grigore Liviu}
 
 \vfill
  
@@ -94,46 +99,37 @@ BACHELOR STUDY PROGRAM:  Computer Science }
 \newpage
 \normalsize{}
 
-\section*{Abstract} 
- 
-\hspace{\parindent}\hspace{\parindent} This paper introduces a mobile application, Moneager, that is designed to cater to the diverse needs of users who seek a comprehensive and personalized solution to manage their finances. With Moneager, users can easily add transactions, generate reports, and monitor their expenses, all through an intuitive and user-friendly interface. The design of the application prioritizes ease of use, with simple and clear navigation, and visual elements that enhance the overall experience.
-
-\hspace{\parindent}In addition to its core features, Moneager also incorporates educational resources to promote financial literacy and encourage users to develop healthier financial habits. Through its tips for saving and budgeting, Moneager empowers users to make informed financial decisions and work towards achieving their financial goals.
-
-\hspace{\parindent}When compared to other money management applications, Moneager stands out as a user-friendly and accessible option that caters to a wider audience. Unlike some of its competitors, which may have a feature-heavy interface and a higher price point, Moneager's focus on ease of use and affordability makes it an ideal choice for everyone who seeks to manage their finances effectively. Overall, Moneager offers a comprehensive and convenient solution for managing personal finances, with an emphasis on user experience and financial education.
-
-
+\input{Abstracts/abstract_en}
 \newpage
+\input{Abstracts/abstract_ro}
+
+
+
+
+
+
 \normalsize{}
 
 
 \tableofcontents
+\listoffigures
 
-\input{Chapter 1 - Introduction.tex}
-\chapter{User Interface Design}
-    \section{Design choices}
-    \section{Screens}
-    \section{Wireframes}
-    \section{Navigation}
+\input{Chapter 1 - Introduction}
+\input{Chapter 2 - Application Desing}
+\input{Chapter 3 - Application Developvement}
+\input{Chapter 4 - Backend Developvement}
+\input{Chapter 5 - Conclusion}
+ 
+% \chapter{User Interface Design}
+%     \section{Design choices}
+%     \section{Screens}
+%     \section{Wireframes}3
+%     \section{Navigation}
 
-\chapter{Server Development}
-    \section{Database Structure}
-    \section{Endpoints (GraphQL)}
 
-\chapter{Similar Money Management Applications}
-    \section{BlueCoins}
-    \section{MoneyManager}
-    \section{MoneyLover}
-    \section{Revolut}
 
-\chapter{The Importance of Financial Education}
-    \section{Problems with Money Management}
-    \section{The Importance of Savings}
 
-\chapter{Conclusion}
+    
 \bibliography{bibliography}
-\bibliographystyle{alpha}
-\addcontentsline{toc}{chapter}{Bibliography}
-
 
 \end{document} 
